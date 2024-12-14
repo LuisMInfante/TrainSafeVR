@@ -1,14 +1,95 @@
-Binaries
-DerivedDataCache
-Intermediate
-Saved
-.vscode
-.vs
+# Ignore build-related directories and files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/*
+
+# Whitelist PakBlacklist-<BuildConfiguration>.txt files
+!Build/*/
+Build/*/**
+!Build/*/PakBlacklist*.txt
+
+# Don't ignore icon files in Build
+!Build/**/*.ico
+
+# Configuration files
+.vscode/
+.vs/
 *.VC.db
 *.opensdf
 *.opendb
 *.sdf
-*.sln
 *.suo
 *.xcodeproj
 *.xcworkspace
+*.sln
+
+# Compiled object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.ipa
+
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Unreal Engine-specific ignored files
+*.tmp
+*.log
+*.lock
+*.bak
+*.pyc
+*.pyo
+*.pyd
+*_BuiltData.uasset
+Config/DefaultEngine.ini
+
+# Plugins
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# Raw source assets
+SourceArt/**/*.png
+SourceArt/**/*.tga
+
+# Cache and auto-generated files
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Editor-based HTTP client requests
+/httpRequests/
+
+# Rider ignored files
+.idea/
+*.iml
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
