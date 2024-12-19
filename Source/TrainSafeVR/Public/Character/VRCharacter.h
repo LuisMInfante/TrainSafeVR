@@ -8,6 +8,7 @@
 #include "GameFramework/Character.h"
 #include "VRCharacter.generated.h"
 
+
 UCLASS()
 class TRAINSAFEVR_API AVRCharacter : public ACharacter
 {

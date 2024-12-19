@@ -1,7 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright © 2024 Luis M. Infante
+// Licensed under the GNU General Public License v3.0 (GPLv3).
+// See the full license at https://www.gnu.org/licenses/gpl-3.0.html.
 
 
-#include "VRCharacter.h"
+#include "Character/VRCharacter.h"
 
 // Sets default values
 AVRCharacter::AVRCharacter()
