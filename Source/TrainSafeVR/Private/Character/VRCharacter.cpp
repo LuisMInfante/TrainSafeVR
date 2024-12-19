@@ -4,6 +4,7 @@
 
 
 #include "Character/VRCharacter.h"
+#include "Player/VRPlayerController.h"
 
 // Sets default values
 AVRCharacter::AVRCharacter()
@@ -24,13 +25,17 @@ void AVRCharacter::BeginPlay()
 void AVRCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
-// Called to bind functionality to input
-void AVRCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AVRCharacter::PossessedBy(AController* NewController)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	Super::PossessedBy(NewController);
 
+	InitActorInfo();
+}
+
+void AVRCharacter::InitActorInfo()
+{
+	PlayerController = Cast<AVRPlayerController>(GetController());
 }
 

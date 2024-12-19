@@ -8,7 +8,7 @@ public class TrainSafeVR : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Niagara", "UMG" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Niagara", "UMG", "XRBase" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] { "EnhancedInput", "XRBase" });
 
